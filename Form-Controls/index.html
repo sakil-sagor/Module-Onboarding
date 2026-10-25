@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -15,10 +15,107 @@
     <header>
       <h1>Product Pick</h1>
     </header>
-    <main></main>
+    <main>
+
+      <form>
+        <fieldset>
+          <legend>Confirm you are the right person</legend>
+
+          <p>
+            <label for="customer-name">Full name</label>
+            <input
+              id="customer-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+              minlength="2"
+              pattern=".{2,}"
+              title="Enter at least two characters"
+            />
+          </p>
+
+          <p>
+            <label for="customer-email">Email address</label>
+            <input
+              id="customer-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>T-shirt colour</legend>
+
+          <p>
+            <input
+              id="colour-navy"
+              name="colour"
+              type="radio"
+              value="navy"
+              required
+            />
+            <label for="colour-navy">Navy</label>
+          </p>
+          <p>
+            <input
+              id="colour-white"
+              name="colour"
+              type="radio"
+              value="white"
+            />
+            <label for="colour-white">White</label>
+          </p>
+          <p>
+            <input
+              id="colour-heather-grey"
+              name="colour"
+              type="radio"
+              value="heather-grey"
+            />
+            <label for="colour-heather-grey">Heather grey</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>T-shirt size</legend>
+
+          <p>
+            <input id="size-xs" name="size" type="radio" value="XS" required />
+            <label for="size-xs">XS</label>
+          </p>
+          <p>
+            <input id="size-s" name="size" type="radio" value="S" />
+            <label for="size-s">S</label>
+          </p>
+          <p>
+            <input id="size-m" name="size" type="radio" value="M" />
+            <label for="size-m">M</label>
+          </p>
+          <p>
+            <input id="size-l" name="size" type="radio" value="L" />
+            <label for="size-l">L</label>
+          </p>
+          <p>
+            <input id="size-xl" name="size" type="radio" value="XL" />
+            <label for="size-xl">XL</label>
+          </p>
+          <p>
+            <input id="size-xxl" name="size" type="radio" value="XXL" />
+            <label for="size-xxl">XXL</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Place order</button>
+        </p>
+      </form>
+    </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Sakil</h2>
     </footer>
   </body>
 </html>
